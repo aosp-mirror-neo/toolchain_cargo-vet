@@ -1,0 +1,104 @@
+
+# cargo-vet audits file
+
+[criteria.audited]
+description = "super audited"
+implies = "safe-to-deploy"
+
+[criteria.fuzzed]
+description = "fuzzed"
+
+[[wildcard-audits.serde]]
+who = "Person One <personone@example.com>"
+criteria = "safe-to-deploy"
+user-id = 3618 # David Tolnay (dtolnay)
+start = "2022-01-01"
+end = "2022-07-01"
+renew = false
+
+[[audits.atty]]
+criteria = "safe-to-run"
+version = "0.2.14"
+
+[[audits.autocfg]]
+criteria = "safe-to-deploy"
+version = "1.1.0"
+notes = "test for simple absolute version with non-defaults"
+
+[[audits.base64]]
+criteria = "safe-to-deploy"
+version = "0.1.0"
+notes = "test for basic resolution"
+
+[[audits.base64]]
+who = "Person One <personone@example.com>"
+criteria = "safe-to-deploy"
+version = "0.5.0"
+
+[[audits.base64]]
+who = [
+    "Person One <personone@example.com>",
+    "Person Two <persontwo@example.com>",
+]
+criteria = "safe-to-deploy"
+delta = "0.1.0 -> 0.4.0"
+
+[[audits.base64]]
+criteria = "safe-to-deploy"
+delta = "0.2.0 -> 0.14.0"
+notes = "basic resolution"
+
+[[audits.base64]]
+criteria = "safe-to-deploy"
+delta = "0.4.0 -> 0.8.1"
+
+[[audits.base64]]
+criteria = "safe-to-deploy"
+delta = "0.8.1 -> 0.9.0"
+
+[[audits.base64]]
+criteria = "safe-to-deploy"
+delta = "0.9.0 -> 0.13.0"
+
+[[audits.bitflags]]
+criteria = "audited"
+version = "0.1.0"
+notes = "test for unioning criteria from two chains"
+
+[[audits.bitflags]]
+criteria = "fuzzed"
+version = "0.2.0"
+
+[[audits.bitflags]]
+criteria = "audited"
+delta = "0.1.0 -> 1.3.2"
+
+[[audits.bitflags]]
+criteria = "fuzzed"
+delta = "0.2.0 -> 1.3.2"
+
+[[audits.cfg-if]]
+criteria = "safe-to-deploy"
+delta = "0.1.10 -> 1.0.0"
+notes = "test for duplicate suggestions"
+
+[[audits.clap]]
+criteria = "safe-to-deploy"
+version = "3.1.8"
+notes = "test for custom criteria (low-grade and high-grade)"
+
+[[audits.syn]]
+criteria = "safe-to-deploy"
+version = "1.0.0"
+notes = "test for partial delta criteria"
+
+[[audits.unicode-bidi]]
+criteria = "safe-to-deploy"
+delta = "0.2.0 -> 0.3.7"
+notes = "test for delta to unaudited"
+
+[[trusted.tracing]]
+criteria = "safe-to-deploy"
+user-id = 1249 # Eliza Weisman (hawkw)
+start = "2022-01-01"
+end = "2022-07-01"

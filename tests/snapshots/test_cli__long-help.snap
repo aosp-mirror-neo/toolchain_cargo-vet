@@ -1,0 +1,167 @@
+---
+source: tests/test-cli.rs
+expression: format_outputs(&output)
+---
+stdout:
+cargo-vet 0.8.0
+Supply-chain security for Rust
+
+When run without a subcommand, `cargo vet` will invoke the `check` subcommand. See `cargo vet help
+check` for more details.
+
+USAGE:
+    cargo vet [OPTIONS]
+    cargo vet <SUBCOMMAND>
+
+OPTIONS:
+    -h, --help
+            Print help information
+
+    -V, --version
+            Print version information
+
+GLOBAL OPTIONS:
+        --manifest-path <PATH>
+            Path to Cargo.toml
+
+        --store-path <STORE_PATH>
+            Path to the supply-chain directory
+
+        --no-all-features
+            Don't use --all-features
+            
+            We default to passing --all-features to `cargo metadata` because we want to analyze your
+            full dependency tree
+
+        --no-default-features
+            Do not activate the `default` feature
+
+        --features <FEATURES>
+            Space-separated list of features to activate
+
+        --locked
+            Do not fetch new imported audits
+
+        --frozen
+            Avoid the network entirely, requiring either that the cargo cache is populated or the
+            dependencies are vendored. Requires --locked
+
+        --no-minimize-exemptions
+            Prevent commands such as `check` and `certify` from automatically cleaning up unused
+            exemptions
+
+        --no-registry-suggestions
+            Prevent commands such as `check` and `suggest` from suggesting registry imports
+
+        --verbose <VERBOSE>
+            How verbose logging should be (log level)
+            
+            [default: warn]
+            [possible values: off, error, warn, info, debug, trace]
+
+        --output-file <OUTPUT_FILE>
+            Instead of stdout, write output to this file
+
+        --log-file <LOG_FILE>
+            Instead of stderr, write logs to this file (only used after successful CLI parsing)
+
+        --output-format <OUTPUT_FORMAT>
+            The format of the output
+            
+            [default: human]
+            [possible values: human, json]
+
+        --cache-dir <CACHE_DIR>
+            Use the following path instead of the global cache directory
+            
+            The cache stores information such as the summary results used by vet's suggestion
+            machinery, cached results from crates.io APIs, and checkouts of crates from crates.io in
+            some cases. This is generally automatically managed in the system cache directory.
+            
+            This mostly exists for testing vet itself.
+
+        --filter-graph <FILTER_GRAPH>
+            Filter out different parts of the build graph and pretend that's the true graph
+            
+            Example: `--filter-graph="exclude(any(eq(is_dev_only(true)),eq(name(serde_derive))))"`
+            
+            This mostly exists to debug or reduce projects that cargo-vet is mishandling.
+            Combining this with `cargo vet --output-format=json dump-graph` can produce an
+            input that can be added to vet's test suite.
+            
+            
+            The resulting graph is computed as follows:
+            
+            1. First compute the original graph
+            2. Then apply the filters to find the new set of nodes
+            3. Create a new empty graph
+            4. For each workspace member that still exists, recursively add it and its dependencies
+            
+            This means that any non-workspace package that becomes "orphaned" by the filters will
+            be implicitly discarded even if it passes the filters.
+            
+            Possible filters:
+            
+            * `include($query)`: only include packages that match this filter
+            * `exclude($query)`: exclude packages that match this filter
+            
+            
+            Possible queries:
+            
+            * `any($query1, $query2, ...)`: true if any of the listed queries are true
+            * `all($query1, $query2, ...)`: true if all of the listed queries are true
+            * `not($query)`: true if the query is false
+            * `$property`: true if the package has this property
+            
+            
+            Possible properties:
+            
+            * `name($string)`: the package's name (i.e. `serde`)
+            * `version($version)`: the package's version (i.e. `1.2.0`)
+            * `is_root($bool)`: whether it's a root in the original graph (ignoring dev-deps)
+            * `is_workspace_member($bool)`: whether the package is a workspace-member (can be
+            tested)
+            * `is_third_party($bool)`: whether the package is considered third-party by vet
+            * `is_dev_only($bool)`: whether it's only used by dev (test) builds in the original
+            graph
+
+SUBCOMMANDS:
+    check
+            \[default\] Check that the current project has been vetted
+    suggest
+            Suggest some low-hanging fruit to review
+    init
+            Initialize cargo-vet for your project
+    inspect
+            Fetch the source of a package
+    diff
+            Yield a diff against the last reviewed version
+    certify
+            Mark a package as audited
+    import
+            Import a new peer's imports
+    trust
+            Trust a given crate and publisher
+    regenerate
+            Explicitly regenerate various pieces of information
+    add-exemption
+            Mark a package as exempted from review
+    record-violation
+            Declare that some versions of a package violate certain audit criteria
+    fmt
+            Reformat all of vet's files (in case you hand-edited them)
+    prune
+            Prune unnecessary imports and exemptions
+    aggregate
+            Fetch and merge audits from multiple sources into a single `audits.toml` file
+    dump-graph
+            Print the cargo build graph as understood by `cargo vet`
+    gc
+            Clean up old packages from the vet cache
+    renew
+            Renew wildcard audit expirations
+    help
+            Print this message or the help of the given subcommand(s)
+
+stderr:
+

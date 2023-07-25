@@ -1,0 +1,9 @@
+---
+source: src/tests/import.rs
+expression: output
+---
+ 
++[audits.peer-company.audits]
++
+ [audits.rival-company.audits]
+

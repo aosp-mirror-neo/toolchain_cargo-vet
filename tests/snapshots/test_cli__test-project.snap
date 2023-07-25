@@ -1,0 +1,9 @@
+---
+source: tests/test-cli.rs
+expression: format_outputs(&output)
+---
+stdout:
+Vetting Succeeded (7 fully audited, 2 partially audited, 97 exempted)
+
+stderr:
+

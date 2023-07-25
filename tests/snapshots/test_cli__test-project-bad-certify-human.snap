@@ -1,0 +1,10 @@
+---
+source: tests/test-cli.rs
+expression: format_outputs(&output)
+---
+stdout:
+
+stderr:
+ERROR   × 'asdfsdfs' isn't one of your foreign packages
+  help: use --force to ignore this error
+

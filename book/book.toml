@@ -1,0 +1,8 @@
+[book]
+authors = ["Bobby Holley"]
+multilingual = false
+src = "src"
+title = "Cargo Vet"
+
+[output.html]
+additional-css = ["src/custom.css"]

@@ -1,0 +1,576 @@
+version = "2"
+
+[diffs.bumpalo."3.9.1"]
+insertions = 10099
+deletions = 0
+files_changed = 17
+
+[diffs.bytes."1.1.0"]
+insertions = 9207
+deletions = 0
+files_changed = 43
+
+[diffs.cc."1.0.73"]
+insertions = 6554
+deletions = 0
+files_changed = 19
+
+[diffs.cfg-if."0.1.10"]
+insertions = 579
+deletions = 0
+files_changed = 9
+
+[diffs.cfg-if."1.0.0"]
+insertions = 582
+deletions = 0
+files_changed = 9
+
+[diffs.core-foundation."0.9.3"]
+insertions = 3953
+deletions = 0
+files_changed = 26
+
+[diffs.core-foundation-sys."0.8.3"]
+insertions = 1965
+deletions = 0
+files_changed = 26
+
+[diffs.encoding_rs."0.8.31"]
+insertions = 507245
+deletions = 0
+files_changed = 102
+
+[diffs.fastrand."1.7.0"]
+insertions = 1368
+deletions = 0
+files_changed = 10
+
+[diffs.fastrand."1.9.0 -> 1.7.0"]
+insertions = 24
+deletions = 107
+files_changed = 6
+
+[diffs.fnv."1.0.7"]
+insertions = 730
+deletions = 0
+files_changed = 8
+
+[diffs.foreign-types."0.3.2"]
+insertions = 583
+deletions = 0
+files_changed = 6
+
+[diffs.foreign-types-shared."0.1.1"]
+insertions = 302
+deletions = 0
+files_changed = 5
+
+[diffs.form_urlencoded."1.0.1"]
+insertions = 689
+deletions = 0
+files_changed = 5
+
+[diffs.form_urlencoded."1.1.0 -> 1.0.1"]
+insertions = 19
+deletions = 13
+files_changed = 3
+
+[diffs.futures-channel."0.3.21"]
+insertions = 3992
+deletions = 0
+files_changed = 18
+
+[diffs.futures-core."0.3.21"]
+insertions = 1175
+deletions = 0
+files_changed = 14
+
+[diffs.futures-sink."0.3.21"]
+insertions = 544
+deletions = 0
+files_changed = 6
+
+[diffs.futures-task."0.3.21"]
+insertions = 1180
+deletions = 0
+files_changed = 14
+
+[diffs.futures-util."0.3.21"]
+insertions = 25067
+deletions = 0
+files_changed = 185
+
+[diffs.h2."0.3.13"]
+insertions = 25417
+deletions = 0
+files_changed = 63
+
+[diffs.hashbrown."0.11.2"]
+insertions = 14603
+deletions = 0
+files_changed = 31
+
+[diffs.hashbrown."0.12.3 -> 0.11.2"]
+insertions = 894
+deletions = 5219
+files_changed = 23
+
+[diffs.hermit-abi."0.1.19"]
+insertions = 932
+deletions = 0
+files_changed = 9
+
+[diffs.http."0.2.6"]
+insertions = 16819
+deletions = 0
+files_changed = 39
+
+[diffs.http-body."0.4.4"]
+insertions = 1256
+deletions = 0
+files_changed = 17
+
+[diffs.httparse."1.7.0"]
+insertions = 7258
+deletions = 0
+files_changed = 18
+
+[diffs.httpdate."1.0.2"]
+insertions = 995
+deletions = 0
+files_changed = 10
+
+[diffs.hyper."0.14.18"]
+insertions = 24841
+deletions = 0
+files_changed = 69
+
+[diffs.hyper-tls."0.5.0"]
+insertions = 673
+deletions = 0
+files_changed = 11
+
+[diffs.idna."0.2.3"]
+insertions = 32532
+deletions = 0
+files_changed = 17
+
+[diffs.idna."0.3.0 -> 0.2.3"]
+insertions = 62
+deletions = 79
+files_changed = 8
+
+[diffs.indexmap."1.8.1"]
+insertions = 9445
+deletions = 0
+files_changed = 31
+
+[diffs.instant."0.1.12"]
+insertions = 672
+deletions = 0
+files_changed = 12
+
+[diffs.ipnet."2.4.0"]
+insertions = 3973
+deletions = 0
+files_changed = 13
+
+[diffs.itoa."1.0.1"]
+insertions = 789
+deletions = 0
+files_changed = 13
+
+[diffs.js-sys."0.3.57"]
+insertions = 12874
+deletions = 0
+files_changed = 62
+
+[diffs.lazy_static."1.4.0"]
+insertions = 876
+deletions = 0
+files_changed = 11
+
+[diffs.libc."0.2.123"]
+insertions = 94060
+deletions = 0
+files_changed = 215
+
+[diffs.log."0.4.16"]
+insertions = 5625
+deletions = 0
+files_changed = 19
+
+[diffs.log."0.4.17 -> 0.4.16"]
+insertions = 19
+deletions = 82
+files_changed = 6
+
+[diffs.matches."0.1.9"]
+insertions = 210
+deletions = 0
+files_changed = 6
+
+[diffs.memchr."2.4.1"]
+insertions = 8712
+deletions = 0
+files_changed = 46
+
+[diffs.mime."0.3.16"]
+insertions = 1715
+deletions = 0
+files_changed = 13
+
+[diffs.mio."0.8.2"]
+insertions = 11719
+deletions = 0
+files_changed = 62
+
+[diffs.miow."0.3.7"]
+insertions = 3129
+deletions = 0
+files_changed = 14
+
+[diffs.native-tls."0.2.10"]
+insertions = 3715
+deletions = 0
+files_changed = 18
+
+[diffs.ntapi."0.3.7"]
+insertions = 21227
+deletions = 0
+files_changed = 42
+
+[diffs.once_cell."1.10.0"]
+insertions = 3766
+deletions = 0
+files_changed = 21
+
+[diffs.openssl."0.10.38"]
+insertions = 28435
+deletions = 0
+files_changed = 82
+
+[diffs.openssl-probe."0.1.5"]
+insertions = 442
+deletions = 0
+files_changed = 9
+
+[diffs.openssl-sys."0.9.72"]
+insertions = 9477
+deletions = 0
+files_changed = 46
+
+[diffs.os_str_bytes."6.0.0"]
+insertions = 2911
+deletions = 0
+files_changed = 21
+
+[diffs.percent-encoding."2.1.0"]
+insertions = 702
+deletions = 0
+files_changed = 5
+
+[diffs.percent-encoding."2.2.0 -> 2.1.0"]
+insertions = 40
+deletions = 69
+files_changed = 4
+
+[diffs.pin-project-lite."0.2.8"]
+insertions = 6100
+deletions = 0
+files_changed = 70
+
+[diffs.pin-utils."0.1.0"]
+insertions = 538
+deletions = 0
+files_changed = 13
+
+[diffs.pkg-config."0.3.25"]
+insertions = 1747
+deletions = 0
+files_changed = 14
+
+[diffs.proc-macro2."1.0.37"]
+insertions = 5695
+deletions = 0
+files_changed = 20
+
+[diffs.proc-macro2."1.0.37@git:4445659b0f753a928059244c875a58bb12f791e9"]
+insertions = 5691
+deletions = 0
+files_changed = 19
+
+[diffs.proc-macro2."1.0.37 -> 1.0.37@git:4445659b0f753a928059244c875a58bb12f791e9"]
+insertions = 63
+deletions = 7
+files_changed = 3
+
+[diffs.proc-macro2."1.0.39 -> 1.0.37"]
+insertions = 16
+deletions = 71
+files_changed = 14
+
+[diffs.proc-macro2."1.0.39 -> 1.0.37@git:4445659b0f753a928059244c875a58bb12f791e9"]
+insertions = 7
+deletions = 6
+files_changed = 12
+
+[diffs.quote."1.0.18"]
+insertions = 3838
+deletions = 0
+files_changed = 33
+
+[diffs.redox_syscall."0.2.13"]
+insertions = 3890
+deletions = 0
+files_changed = 30
+
+[diffs.remove_dir_all."0.5.3"]
+insertions = 592
+deletions = 0
+files_changed = 7
+
+[diffs.reqwest."0.11.10"]
+insertions = 19797
+deletions = 0
+files_changed = 60
+
+[diffs.ryu."1.0.9"]
+insertions = 4362
+deletions = 0
+files_changed = 34
+
+[diffs.schannel."0.1.19"]
+insertions = 4601
+deletions = 0
+files_changed = 32
+
+[diffs.security-framework."2.6.1"]
+insertions = 9316
+deletions = 0
+files_changed = 42
+
+[diffs.security-framework-sys."2.6.1"]
+insertions = 2016
+deletions = 0
+files_changed = 27
+
+[diffs.serde."1.0.136"]
+insertions = 16141
+deletions = 0
+files_changed = 27
+
+[diffs.serde_json."1.0.79"]
+insertions = 22848
+deletions = 0
+files_changed = 86
+
+[diffs.serde_urlencoded."0.7.1"]
+insertions = 2120
+deletions = 0
+files_changed = 17
+
+[diffs.slab."0.4.6"]
+insertions = 2615
+deletions = 0
+files_changed = 9
+
+[diffs.socket2."0.4.4"]
+insertions = 6011
+deletions = 0
+files_changed = 11
+
+[diffs.syn."1.0.0 -> 1.0.91"]
+insertions = 21772
+deletions = 6698
+files_changed = 92
+
+[diffs.tempfile."3.3.0"]
+insertions = 4059
+deletions = 0
+files_changed = 22
+
+[diffs.termcolor."1.1.3"]
+insertions = 2578
+deletions = 0
+files_changed = 10
+
+[diffs.textwrap."0.15.0"]
+insertions = 5196
+deletions = 0
+files_changed = 15
+
+[diffs.tinyvec."1.5.1"]
+insertions = 16751
+deletions = 0
+files_changed = 25
+
+[diffs.tinyvec."1.6.0 -> 1.5.1"]
+insertions = 12
+deletions = 304
+files_changed = 6
+
+[diffs.tinyvec_macros."0.1.0"]
+insertions = 81
+deletions = 0
+files_changed = 5
+
+[diffs.tokio."1.17.0"]
+insertions = 91271
+deletions = 0
+files_changed = 403
+
+[diffs.tokio-native-tls."0.3.0"]
+insertions = 1089
+deletions = 0
+files_changed = 16
+
+[diffs.tokio-util."0.7.1"]
+insertions = 13870
+deletions = 0
+files_changed = 65
+
+[diffs.tower-service."0.3.1"]
+insertions = 501
+deletions = 0
+files_changed = 6
+
+[diffs.tracing."0.1.33"]
+insertions = 10950
+deletions = 0
+files_changed = 32
+
+[diffs.tracing-attributes."0.1.20"]
+insertions = 3957
+deletions = 0
+files_changed = 18
+
+[diffs.tracing-core."0.1.25"]
+insertions = 6156
+deletions = 0
+files_changed = 26
+
+[diffs.try-lock."0.2.3"]
+insertions = 380
+deletions = 0
+files_changed = 6
+
+[diffs.unicode-bidi."0.2.0"]
+insertions = 595896
+deletions = 0
+files_changed = 13
+
+[diffs.unicode-bidi."0.3.7"]
+insertions = 3217
+deletions = 0
+files_changed = 20
+
+[diffs.unicode-bidi."0.3.8 -> 0.2.0"]
+insertions = 595493
+deletions = 3137
+files_changed = 23
+
+[diffs.unicode-bidi."0.3.8 -> 0.3.7"]
+insertions = 526
+deletions = 849
+files_changed = 14
+
+[diffs.unicode-normalization."0.1.19"]
+insertions = 28622
+deletions = 0
+files_changed = 24
+
+[diffs.unicode-xid."0.2.2"]
+insertions = 2044
+deletions = 0
+files_changed = 12
+
+[diffs.url."2.2.2"]
+insertions = 16344
+deletions = 0
+files_changed = 15
+
+[diffs.url."2.3.1 -> 2.2.2"]
+insertions = 1509
+deletions = 2748
+files_changed = 13
+
+[diffs.vcpkg."0.2.15"]
+insertions = 42642
+deletions = 0
+files_changed = 832
+
+[diffs.want."0.3.0"]
+insertions = 697
+deletions = 0
+files_changed = 7
+
+[diffs.wasi."0.11.0+wasi-snapshot-preview1"]
+insertions = 3302
+deletions = 0
+files_changed = 15
+
+[diffs.wasm-bindgen."0.2.80"]
+insertions = 20977
+deletions = 0
+files_changed = 242
+
+[diffs.wasm-bindgen-backend."0.2.80"]
+insertions = 3018
+deletions = 0
+files_changed = 10
+
+[diffs.wasm-bindgen-futures."0.4.30"]
+insertions = 1303
+deletions = 0
+files_changed = 12
+
+[diffs.wasm-bindgen-macro."0.2.80"]
+insertions = 1274
+deletions = 0
+files_changed = 45
+
+[diffs.wasm-bindgen-macro-support."0.2.80"]
+insertions = 1965
+deletions = 0
+files_changed = 6
+
+[diffs.wasm-bindgen-shared."0.2.80"]
+insertions = 515
+deletions = 0
+files_changed = 7
+
+[diffs.wasm-bindgen-shared."0.2.83 -> 0.2.80"]
+insertions = 7
+deletions = 10
+files_changed = 4
+
+[diffs.web-sys."0.3.57"]
+insertions = 197013
+deletions = 0
+files_changed = 2202
+
+[diffs.winapi."0.3.9"]
+insertions = 181323
+deletions = 0
+files_changed = 410
+
+[diffs.winapi-i686-pc-windows-gnu."0.4.0"]
+insertions = 1132
+deletions = 0
+files_changed = 1391
+
+[diffs.winapi-util."0.1.5"]
+insertions = 1095
+deletions = 0
+files_changed = 13
+
+[diffs.winapi-x86_64-pc-windows-gnu."0.4.0"]
+insertions = 1167
+deletions = 0
+files_changed = 1420
+
+[diffs.winreg."0.10.1"]
+insertions = 3920
+deletions = 0
+files_changed = 26

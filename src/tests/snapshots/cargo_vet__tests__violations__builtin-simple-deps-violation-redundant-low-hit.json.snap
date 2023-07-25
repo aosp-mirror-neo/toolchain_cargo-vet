@@ -1,0 +1,34 @@
+---
+source: src/tests/violations.rs
+expression: json
+---
+{
+  "conclusion": "fail (violation)",
+  "violations": {
+    "dev:10.0.0": [
+      {
+        "AuditConflict": {
+          "violation_source": null,
+          "violation": {
+            "criteria": [
+              "safe-to-run",
+              "safe-to-deploy"
+            ],
+            "version": null,
+            "delta": null,
+            "violation": "*",
+            "notes": null
+          },
+          "audit_source": null,
+          "audit": {
+            "criteria": "safe-to-run",
+            "version": "10.0.0",
+            "delta": null,
+            "violation": null,
+            "notes": null
+          }
+        }
+      }
+    ]
+  }
+}

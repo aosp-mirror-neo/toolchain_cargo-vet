@@ -1,0 +1,26 @@
+---
+source: src/serialization.rs
+expression: formatted
+---
+
+[cargo-vet]
+version = "1.0"
+
+[policy.long-criteria]
+criteria = "long-criteria"
+notes = "notes go here!"
+
+[policy.long-criteria.dependency-criteria]
+example-crate-1 = ["criteria-one-very-long", "criteria-two-very-long"]
+example-crate-2 = ["criteria-one-✨✨✨✨✨✨✨✨✨✨", "criteria-two-✨✨✨✨✨✨✨✨✨✨"]
+example-crate-3 = [
+    "criteria-one-very-long",
+    "criteria-two-very-long",
+    "criteria-three-extremely-long-this-array-should-wrap",
+]
+
+[policy.short-criteria]
+criteria = "short-criteria"
+dependency-criteria = { example-crate-1 = "criteria-one" }
+notes = "notes go here!"
+

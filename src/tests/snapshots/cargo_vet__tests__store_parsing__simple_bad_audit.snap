@@ -1,0 +1,15 @@
+---
+source: src/tests/store_parsing.rs
+expression: acquire_errors
+---
+  × Your cargo-vet store (supply-chain) has consistency errors
+
+Error:   × 'bad' is not a valid criteria name
+   ╭─[audits.toml:4:1]
+ 4 │ [[audits.serde]]
+ 5 │ criteria = "bad"
+   ·            ─────
+ 6 │ version = "1.0.0"
+   ╰────
+  help: the possible criteria are ["safe-to-run", "safe-to-deploy"]
+
